@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirsaleh Agayev</title>
+    <script src="./script.js" defer></script>
+</head>
+
+</head>
+
+<body>
+    <div class="main">
+        <h4>Div-in width-i, height-i və border width-i dəyişdirmək üçün inputa daxil olunan qiymətə uyğun olaraq div-in
+            ölçülərini artırmaq!</h4>
+        <input type="number" id="widthInput" placeholder="Width">
+        <input type="number" id="heightInput" placeholder="Height">
+        <input type="number" id="borderInput" placeholder="Border Width">
+        <button onclick="artir()">Artır</button>
+        <div id="myDiv"></div>
+    </div>
+    <style>
+        .main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"],
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</body>
+
+</html>

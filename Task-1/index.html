@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirsaleh Agayev</title>
+</head>
+
+<body>
+    <div class="main">
+        <h4>1. Sadə kalkulyator</h4>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button onclick="toplama()">+</button>
+        <button onclick="cixma()">-</button>
+        <button onclick="vurma()">*</button>
+        <button onclick="bolme()">/</button>
+        <p id="result"></p>
+    </div>
+
+    <style>
+        .main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input[type="text"],
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+
+    <script>
+        function toplama() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = num1 + num2;
+        }
+
+        function cixma() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = num1 - num2;
+        }
+
+        function vurma() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function bolme() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            if (num2 === 0) {
+                document.getElementById("result").innerHTML = "Xəta! 0-a bölmə mümkün deyil!";
+            } else {
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+        }
+    </script>
+</body>
+
+</html>
