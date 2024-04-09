@@ -1,0 +1,61 @@
+.task-11 {
+    padding: 32px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.task-11 h1 {
+    color: darkblue;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.task-11 .select {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.task-11 .option {
+    background-color: white;
+    padding: 0 32px;
+    margin-bottom: 4px;
+}
+
+.task-11 .optionText {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 250ms ease;
+}
+
+.task-11 .option p {
+    padding: 0 0 32px 0;
+    margin: 0;
+}
+
+.task-11 .option.active .optionBtn {
+    color: darkblue;
+}
+
+.task-11 .option.active .optionBtn i {
+    transform: rotate(90deg);
+}
+
+.task-11 .option.active .optionText {
+    max-height: 200px;
+}
+
+.task-11 .optionBtn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.task-11 .optionBtn i {
+    font-weight: 900;
+    transition: transform 250ms ease;
+}
+
+.task-11 .optionBtn h3 {
+    font-size: 24px;
+}

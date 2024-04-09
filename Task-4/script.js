@@ -9,3 +9,4 @@ function artir() {
     myDiv.style.height = (200 + parseInt(height)) + "px";
     myDiv.style.borderWidth = borderWidth + "px";
 }
+

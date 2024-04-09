@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="changeDiv">
+        <input type="number" id="width" placeholder="width" />
+        <input type="number" id="height" placeholder="height" />
+        <input type="number" id="borderWidth" placeholder="border width" />
+
+        <select name="borderStyle" id="borderStyle">
+            <option value="">Border Style</option>
+            <option value="none">None</option>
+            <option value="dashed">Dashed</option>
+            <option value="dotted">Dotted</option>
+            <option value="double">Double</option>
+            <option value="solid">Solid</option>
+        </select>
+
+        <select name="borderColor" id="borderColor">
+            <option value="">Border Color</option>
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="purple">purple</option>
+        </select>
+
+        <select name="color" id="color">
+            <option value="">Color</option>
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="purple">purple</option>
+        </select>
+
+        <select name="backgroundColor" id="backgroundColor">
+            <option value="">Background Color</option>
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="purple">purple</option>
+        </select>
+
+        <div id="targetDiv"></div>
+
+        <button id="changeDivBtn">OK</button>
+    </div>
+</body>
+</html>

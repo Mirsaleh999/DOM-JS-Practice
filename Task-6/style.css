@@ -1,0 +1,98 @@
+.task-6 {
+    overflow-x: hidden;
+}
+
+.burger-menu {
+    width: 20px;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 750ms ease;
+}
+
+.burger-menu div:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.task-6-inner.active .burger-menu div:nth-child(1) {
+    transform: translateY(7px) rotate(-45deg);
+}
+
+.task-6-inner.active .burger-menu div:nth-child(2) {
+    transform: translateX(-14px) scaleY(0);
+    opacity: 0;
+}
+
+.task-6-inner.active .burger-menu div:nth-child(3) {
+    transform: translateY(-7px) rotate(45deg);
+}
+
+.task-6-inner.active {
+    background-color: #051651;
+    transform: translateX(0);
+}
+
+.task-6-inner.active li i {
+    opacity: 0;
+    display: none;
+}
+
+.task-6-inner.active li h3 {
+    opacity: 1;
+}
+
+.task-6-inner {
+    font-family: sans-serif;
+    color: white;
+    background-color: #5c6784;
+    padding: 10px;
+    width: 260px;
+    transform: translateX(-240px);
+    transition: all 500ms ease;
+}
+
+.task-6-inner li {
+    position: relative;
+}
+
+.task-6-inner li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 32px 0;
+    gap: 16px;
+    position: relative;
+}
+
+.task-6-inner li i {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 250ms ease;
+}
+
+.task-6-inner li i:hover {
+    box-shadow: 0 0 16px white;
+    transform: scale(0.9);
+}
+
+.task-6-inner li h3 {
+    opacity: 0;
+    width: max-content;
+    margin: 0 0 0 auto;
+    transition: all 500ms ease;
+}
+
+.task-6-inner-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.task-6-inner-top h2 {
+    margin: 0;
+}
